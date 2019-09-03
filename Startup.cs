@@ -30,19 +30,14 @@ namespace Core_Demo_2
             // Developer Exception Middle weare
             if (env.IsDevelopment())
             {
-                // This Code will help to display the number of lines to displayed of stack trace.
-                DeveloperExceptionPageOptions developerExceptionPageOptions = new DeveloperExceptionPageOptions()
-                {
-                    SourceCodeLineCount = 20
-                };
-                app.UseDeveloperExceptionPage(developerExceptionPageOptions);
+                app.UseDeveloperExceptionPage();
             }
             app.UseFileServer();
             app.UseStaticFiles();
 
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("MW 3: Request Handled and Response Produce");
+                await context.Response.WriteAsync(env.EnvironmentName);
             });
         }
     }
