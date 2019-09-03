@@ -1,1 +1,2 @@
 "# ASP-.Net-Core-by-Pragim-Tech"  git init git add README.md git commit -m "first commit" git remote add origin https://github.com/ahsansoftengineer/ASP-.Net-Core-by-Pragim-Tech.git git push -u origin master
+"# ASP-.Net-Core-by-Pragim-Tech"  git init git add README.md git commit -m "first commit" git remote add origin https://github.com/ahsansoftengineer/ASP-.Net-Core-by-Pragim-Tech.git git push -u origin master

@@ -27,28 +27,21 @@ namespace Core_Demo_2
         public void Configure(IApplicationBuilder app, IHostingEnvironment env,
                               ILogger<Startup> logger)
         {
-            // This is called as Pipeline
+            // This is called as Pipelines
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.Use(async (context, next) =>
-            {
-                logger.LogInformation("MW 1: Incomming Request");
-                await context.Response.WriteAsync("<p></p>Response from 1st Middleware </br> ");
-                await next();
-                await context.Response.WriteAsync("Response from 1st Middleware </br> ");
-                logger.LogInformation("MW 1: OutGoing Response");
-            });
-
-            app.Use(async (context, next) =>
-            {
-                logger.LogInformation("MW 2: Incomming Request");
-                await context.Response.WriteAsync("Response from 2nd Middleware </br> ");
-                await next();
-                await context.Response.WriteAsync("Response from 2nd Middleware </br> ");
-                logger.LogInformation("MW 2: OutGoing Response");
-            });
+            // To display the static files
+            //DefaultFilesOptions dfo = new DefaultFilesOptions();
+            //dfo.DefaultFileNames.Clear();
+            //dfo.DefaultFileNames.Add("foo.html");
+            //app.UseDefaultFiles(dfo);
+            FileServerOptions fso = new FileServerOptions();
+            fso.DefaultFilesOptions.DefaultFileNames.Clear();
+            fso.DefaultFilesOptions.DefaultFileNames.Add("foo.html");
+            app.UseFileServer(fso);
+            app.UseStaticFiles();
 
             app.Run(async (context) =>
             {
