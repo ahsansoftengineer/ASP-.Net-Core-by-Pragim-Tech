@@ -24,28 +24,24 @@ namespace Core_Demo_2
         {
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env,
-                              ILogger<Startup> logger)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             // This is called as Pipelines
+            // Developer Exception Middle weare
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                // This Code will help to display the number of lines to displayed of stack trace.
+                DeveloperExceptionPageOptions developerExceptionPageOptions = new DeveloperExceptionPageOptions()
+                {
+                    SourceCodeLineCount = 20
+                };
+                app.UseDeveloperExceptionPage(developerExceptionPageOptions);
             }
-            // To display the static files
-            //DefaultFilesOptions dfo = new DefaultFilesOptions();
-            //dfo.DefaultFileNames.Clear();
-            //dfo.DefaultFileNames.Add("foo.html");
-            //app.UseDefaultFiles(dfo);
-            FileServerOptions fso = new FileServerOptions();
-            fso.DefaultFilesOptions.DefaultFileNames.Clear();
-            fso.DefaultFilesOptions.DefaultFileNames.Add("foo.html");
-            app.UseFileServer(fso);
+            app.UseFileServer();
             app.UseStaticFiles();
 
             app.Run(async (context) =>
             {
-                logger.LogInformation("MW 3: Request Handled and Response Produce");
                 await context.Response.WriteAsync("MW 3: Request Handled and Response Produce");
             });
         }
