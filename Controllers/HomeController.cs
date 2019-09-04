@@ -12,16 +12,20 @@ namespace Core_Demo_2.Controllers
     public class HomeController : Controller
     {
         // Step 4 Implement Dependency Injection by using private Field and Constructor
-        private IEmployeeRepository _employeeRepository;
+        private readonly IEmployeeRepository _employeeRepository;
         public HomeController(IEmployeeRepository employeeRepository)
         {
             _employeeRepository = employeeRepository;
         }
         // This where we are returning the Result
-        public JsonResult Index()
+        public string Index()
         {
-            return Json(_employeeRepository.GetEmployee(101));
+            return _employeeRepository.GetEmployee(101).Name;
         }
-        // After this Implementation we have Error 500
+        // This changes is for Returning the XML / JSON data as required
+        public ObjectResult Details(int Id)
+        {
+            return new ObjectResult(_employeeRepository.GetEmployee(Id));
+        }
     }
 }
