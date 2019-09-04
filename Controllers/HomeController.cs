@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Core_Demo_2.Models;
+using Core_Demo_2.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -25,9 +26,12 @@ namespace Core_Demo_2.Controllers
         // Changes for Returning the View in MVC Core
     public ViewResult Details(int Id)
     {
-        ViewData["Employee"] = _employeeRepository.GetEmployee(Id);
-        ViewData["Page Title"] = "Employee Details";
-        return View();
+        HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
+        {
+            PageTitle = "Employee Details",
+            Employee = _employeeRepository.GetEmployee(Id)
+        };
+        return View(homeDetailsViewModel);
     }
     }
 }
