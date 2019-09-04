@@ -22,10 +22,10 @@ namespace Core_Demo_2.Controllers
         {
             return _employeeRepository.GetEmployee(101).Name;
         }
-        // This changes is for Returning the XML / JSON data as required
-        public ObjectResult Details(int Id)
-        {
-            return new ObjectResult(_employeeRepository.GetEmployee(Id));
-        }
+        // Changes for Returning the View in MVC Core
+    public ViewResult Details()
+    {
+        return View(_employeeRepository.GetEmployee(101));
+    }
     }
 }
