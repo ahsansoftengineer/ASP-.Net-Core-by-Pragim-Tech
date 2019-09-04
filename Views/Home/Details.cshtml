@@ -3,6 +3,15 @@
     <title></title>
 </head>
 <body>
-    <h1>This is Details.cshtml View</h1>
+    <h3>@ViewData["Page Title"]</h3>
+    @{
+        var employee = (Core_Demo_2.Models.Employee)ViewData["Employee"];
+        <div>Id : @employee.Id;</div>
+        <div>Name : @employee.Name;</div>
+        <div>Email : @employee.Email;</div>
+        <div>Department : @employee.Department;</div>
+        var result = 2 + 2;
+        @result;
+    }
 </body>
 </html>
