@@ -22,10 +22,29 @@ namespace Core_Demo_2.Controllers
         {
             return _employeeRepository.GetEmployee(101).Name;
         }
+        public ViewResult Detail()
+        {
+            return View();
+        }
         // Changes for Returning the View in MVC Core
-    public ViewResult Details()
-    {
-        return View(_employeeRepository.GetEmployee(101));
-    }
+        public ViewResult Details()
+        {
+            return View(_employeeRepository.GetEmployee(101));
+        }
+        // Example of View to Custom Display of Random Folder
+        public ViewResult PatternView()
+        {
+            return View("PatternView");
+        }
+        // Example of View to Custom Display of Abosulte Path
+        public ViewResult AbsoluteView()
+        { 
+            return View("Absolute/AbsoluteView.cshtml");
+        }
+        // Example of View to Custom Display of Relative Path
+        public ViewResult RelativeView()
+        {
+            return View("../Relative/Relative");
+        }
     }
 }

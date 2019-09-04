@@ -21,3 +21,6 @@ F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.1\Core Demo 2
 F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.1\Core Demo 2.Views.pdb
 F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.1\Core Demo 2.csproj.CopyComplete
 F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.1\Razor\Views\Home\Details.g.cshtml.cs
+F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.1\Razor\Views\Home\PatternView.g.cshtml.cs
+F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.1\Razor\Absolute\AbsoluteView.g.cshtml.cs
+F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.1\Razor\Views\Relative\RelativeView.g.cshtml.cs

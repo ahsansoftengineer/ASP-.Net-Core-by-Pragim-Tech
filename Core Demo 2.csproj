@@ -15,4 +15,10 @@
     <Folder Include="wwwroot\css\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Views\Relative\RelativeView.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+  </ItemGroup>
+
 </Project>
