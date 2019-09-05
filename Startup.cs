@@ -21,13 +21,13 @@ namespace Core_Demo_2
         }
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
-    public void ConfigureServices(IServiceCollection services)
-    {
-        // Changes 1 for MVC
-        services.AddMvc().AddXmlSerializerFormatters();
-        // Here we r Registering the IEmployeeRepository to work with DI
-        services.AddSingleton<IEmployeeRepository, MockEmployeeRepository>();
-    }
+        public void ConfigureServices(IServiceCollection services)
+        {
+            // Changes 1 for MVC
+            services.AddMvc().AddXmlSerializerFormatters();
+            // Here we r Registering the IEmployeeRepository to work with DI
+            services.AddSingleton<IEmployeeRepository, MockEmployeeRepository>();
+        }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {

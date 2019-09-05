@@ -1,7 +1,8 @@
 ﻿    @model IEnumerable<Core_Demo_2.Models.Employee>
 
     @{
-        Layout = "~/Views/Shared/_Layout.cshtml";
+        // _ViewStart covering that
+        // Layout = "~/Views/Shared/_Layout.cshtml";
         ViewBag.Title = "Employees";
     }
     <table>
@@ -22,3 +23,8 @@
             }
         </tbody>
     </table>
+
+@* This is the way of defining Optional Part in the Layout View *@
+    @section Scripts{ 
+        <script src="~/js/JavaScript.js"></script>
+    }
