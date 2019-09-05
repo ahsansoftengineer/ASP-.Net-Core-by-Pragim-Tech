@@ -24,14 +24,18 @@ namespace Core_Demo_2.Controllers
             return _employeeRepository.GetEmployee(101).Name;
         }
         // Changes for Returning the View in MVC Core
-    public ViewResult Details(int Id)
-    {
-        HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
+        public ViewResult GetEmployee(int Id)
         {
-            PageTitle = "Employee Details",
-            Employee = _employeeRepository.GetEmployee(Id)
-        };
-        return View(homeDetailsViewModel);
-    }
+            HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
+            {
+                PageTitle = "Employee Details",
+                Employee = _employeeRepository.GetEmployee(Id)
+            };
+            return View(homeDetailsViewModel);
+        }
+        public ViewResult GetEmployees()
+        {
+            return View(_employeeRepository.GetEmployees());
+        }
     }
 }

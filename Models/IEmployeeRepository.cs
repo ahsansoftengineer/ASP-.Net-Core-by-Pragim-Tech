@@ -9,5 +9,6 @@ namespace Core_Demo_2.Models
     public interface IEmployeeRepository
     {
         Employee GetEmployee(int Id);
+        List<Employee> GetEmployees();
     }
 }
