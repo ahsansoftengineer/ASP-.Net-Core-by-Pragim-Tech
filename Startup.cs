@@ -39,7 +39,13 @@ namespace Core_Demo_2
             }
             app.UseStaticFiles();
             // Changes 2 for MVC
-            app.UseMvcWithDefaultRoute();
+            //app.UseMvcWithDefaultRoute();
+            // Conventional Routing
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
+            });
+
         }
     }
 }
