@@ -33,9 +33,9 @@ namespace Core_Demo_2.Controllers
             };
             return View(homeDetailsViewModel);
         }
-        public ViewResult GetEmployees()
-        {
-            return View(_employeeRepository.GetEmployees());
-        }
+    public ViewResult GetEmployees()
+    {
+        return View(_employeeRepository.GetEmployees());
+    }
     }
 }
