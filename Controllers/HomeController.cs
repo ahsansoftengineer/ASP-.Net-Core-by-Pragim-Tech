@@ -10,6 +10,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Core_Demo_2.Controllers
 {
+    [Route("[controller]")]
+    [Route("")]
     public class HomeController : Controller
     {
         // Step 4 Implement Dependency Injection by using private Field and Constructor
@@ -19,23 +21,27 @@ namespace Core_Demo_2.Controllers
             _employeeRepository = employeeRepository;
         }
         // This where we are returning the Result
-        public string Index()
-        {
-            return _employeeRepository.GetEmployee(101).Name;
-        }
-        // Changes for Returning the View in MVC Core
-        public ViewResult GetEmployee(int Id)
-        {
-            HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
-            {
-                PageTitle = "Employee Details",
-                Employee = _employeeRepository.GetEmployee(Id)
-            };
-            return View(homeDetailsViewModel);
-        }
+        [Route("")]
+        [Route("Index")]
+        [Route("[action]")]
+        [Route("Employees")]
         public ViewResult GetEmployees()
         {
             return View(_employeeRepository.GetEmployees());
         }
+
+        [Route("Employee")]
+        [Route("Employee/{id?}")]
+        [Route("[action]")]
+        public ViewResult GetEmployee(int? Id)
+        {
+            HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
+            {
+                PageTitle = "Employee Details",
+                Employee = _employeeRepository.GetEmployee(Id ?? 101)
+            };
+            return View(homeDetailsViewModel);
+        }
+
     }
 }

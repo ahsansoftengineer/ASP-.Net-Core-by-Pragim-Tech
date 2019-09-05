@@ -41,11 +41,11 @@ namespace Core_Demo_2
             // Changes 2 for MVC
             //app.UseMvcWithDefaultRoute();
             // Conventional Routing
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
-            });
-
+            //app.UseMvc(routes =>
+            //{
+            //    routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
+            //});
+            app.UseMvc();
         }
     }
 }
