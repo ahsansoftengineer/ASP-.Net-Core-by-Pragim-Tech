@@ -10,10 +10,22 @@
 @{
     if (Model.Employee != null)
     {
-        <div>Id : @Model.Employee.Id;</div>
-        <div>Name : @Model.Employee.Name;</div>
-        <div>Email : @Model.Employee.Email;</div>
-        <div>Department : @Model.Employee.Department;</div>
+    <div class="card- m-3">
+        <div class="card-header">
+            <h3>@Model.Employee.Id</h3>
+        </div>
+        <img class="card-img-top" height="320" src="~/images/download1.jpg" />
+        <div class="card-body">
+            <p>Name: @Model.Employee.Name </p>
+            <p>Email: @Model.Employee.Email</p>
+            <p>Department: @Model.Employee.Department</p>
+        </div>
+        <div class="card-footer text-center">
+            <a href="/home/employees" class="btn btn-primary">Back</a>
+            <a href="/home/employees" class="btn btn-primary">Edit</a>
+            <a href="/home/employees" class="btn btn-danger">Delete</a>
+        </div>
+    </div>
     }
     else
     {
