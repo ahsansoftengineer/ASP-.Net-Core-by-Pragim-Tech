@@ -18,6 +18,7 @@
                 <p>Department: @item.Department</p>
             </div>
             <div class="card-footer text-center">
+                <a asp-controller="home" asp-action="employee" asp-route-id="item.Id" class="btn btn-primary">Display</a>
                 <a href="/home/employee/@item.Id" class="btn btn-primary">View</a>
                 <a href="/home/employee/@item.Id" class="btn btn-primary">Edit</a>
                 <a href="/home/employee/@item.Id" class="btn btn-danger">Delete</a>

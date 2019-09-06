@@ -1,0 +1,27 @@
+F:\Projects Practice\Core Demo 2\Core Demo 2\bin\Debug\netcoreapp2.2\Core Demo 2.deps.json
+F:\Projects Practice\Core Demo 2\Core Demo 2\bin\Debug\netcoreapp2.2\Core Demo 2.runtimeconfig.json
+F:\Projects Practice\Core Demo 2\Core Demo 2\bin\Debug\netcoreapp2.2\Core Demo 2.runtimeconfig.dev.json
+F:\Projects Practice\Core Demo 2\Core Demo 2\bin\Debug\netcoreapp2.2\Core Demo 2.dll
+F:\Projects Practice\Core Demo 2\Core Demo 2\bin\Debug\netcoreapp2.2\Core Demo 2.pdb
+F:\Projects Practice\Core Demo 2\Core Demo 2\bin\Debug\netcoreapp2.2\Core Demo 2.Views.dll
+F:\Projects Practice\Core Demo 2\Core Demo 2\bin\Debug\netcoreapp2.2\Core Demo 2.Views.pdb
+F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.2\Core Demo 2.csprojAssemblyReference.cache
+F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.2\Core Demo 2.csproj.CoreCompileInputs.cache
+F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.2\Core Demo 2.RazorAssemblyInfo.cache
+F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.2\Core Demo 2.RazorAssemblyInfo.cs
+F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.2\Core Demo 2.AssemblyInfoInputs.cache
+F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.2\Core Demo 2.AssemblyInfo.cs
+F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.2\Core Demo 2.TagHelpers.input.cache
+F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.2\Core Demo 2.TagHelpers.output.cache
+F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.2\Core Demo 2.RazorCoreGenerate.cache
+F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.2\Razor\Views\Home\GetEmployee.g.cshtml.cs
+F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.2\Razor\Views\Home\GetEmployees.g.cshtml.cs
+F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.2\Core Demo 2.RazorTargetAssemblyInfo.cache
+F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.2\Core Demo 2.RazorTargetAssemblyInfo.cs
+F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.2\Core Demo 2.Views.pdb
+F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.2\Core Demo 2.dll
+F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.2\Core Demo 2.pdb
+F:\Projects Practice\Core Demo 2\Core Demo 2\obj\Debug\netcoreapp2.2\Core Demo 2.csproj.CopyComplete
