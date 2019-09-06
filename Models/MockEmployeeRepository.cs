@@ -13,7 +13,7 @@ namespace Core_Demo_2.Models
         {
             _employees = new List<Employee>()
             {
-                new Employee {Id = 101, Name = "Ahsan", Email = "ahsansoftengineer@gmail.com", Department = "Dev" },
+                new Employee {Id = 101, Name = "Ahsan", Email = "ahsan@gmail.com", Department = "Dev" },
                 new Employee {Id = 102, Name = "Yousuf", Email = "yousuf@gmail.com", Department = "IT" },
                 new Employee {Id = 103, Name = "Mobin", Email = "mobin@gmail.com", Department = "HR" },
                 new Employee {Id = 104, Name = "asim", Email = "asim@gmail.com", Department = "PayRoll" }

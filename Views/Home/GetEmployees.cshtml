@@ -1,30 +1,31 @@
-﻿    @model IEnumerable<Employee>
+﻿@model IEnumerable<Employee>
 
-    @{
-        // _ViewStart covering that
-        // Layout = "~/Views/Shared/_Layout.cshtml";
-        ViewBag.Title = "Employees";
+@{
+    ViewBag.Title = "Employees";
+}
+
+<div class="card-deck">
+    @foreach (var item in Model)
+    {
+        <div class="card- m-3">
+            <div class="card-header">
+                <h3>@item.Id</h3>
+            </div>
+            <img class="card-img-top" src="~/images/download1.jpg" />
+            <div class="card-body">
+                <p>Name: @item.Name </p>
+                <p>Email: @item.Email</p>
+                <p>Department: @item.Department</p>
+            </div>
+            <div class="card-footer text-center">
+                <a href="#" class="btn btn-primary">View</a>
+                <a href="#" class="btn btn-primary">Edit</a>
+                <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
     }
-    <table>
-        <thead>
-            <tr>
-                <td>ID</td><td>Name</td><td>Email</td><td>Department</td>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>@item.Id</td>
-                    <td>@item.Name</td>
-                    <td>@item.Email</td>
-                    <td>@item.Department</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-
+</div>
 @* This is the way of defining Optional Part in the Layout View *@
-    @section Scripts{ 
-        <script src="~/js/JavaScript.js"></script>
-    }
+@section Scripts{
+    @*<script src="~/js/JavaScript.js"></script>*@
+}

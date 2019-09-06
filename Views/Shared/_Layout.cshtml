@@ -2,10 +2,13 @@
 <html>
 <head>
     <title>@ViewBag.Title</title>
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/Custom.css" rel="stylesheet" />
 </head>
 <body>
-    @RenderBody()
-
+    <div class="container">
+        @RenderBody()
+    </div>
     @if (IsSectionDefined("Scripts"))
     {
         @RenderSection("Scripts", required: true)
